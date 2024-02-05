@@ -1,0 +1,8 @@
+import nmap3
+
+nmap = nmap3.Nmap()
+results = nmap.scan_top_ports("0.0.0.0")
+print(results)
+nmap2 = nmap3.Nmap()
+os_results = nmap2.nmap_os_detection("0.0.0.0")
+print(os_results)
